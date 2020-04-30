@@ -375,17 +375,6 @@ class Mage_Catalog_Model_Resource_Category_Collection extends Mage_Catalog_Model
     }
 
     /**
-     * Add store filter
-     *
-     * @return $this
-     */
-    public function addStoreFilter()
-    {
-        $this->addFieldToFilter('main_table.store_id', $this->getStoreId());
-        return $this;
-    }
-
-    /**
      * Add active category filter
      *
      * @return $this
